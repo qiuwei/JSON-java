@@ -237,10 +237,10 @@ public class JSONObject {
             
             if (key != null) {
                 // Check if key exists
-                if (this.opt(key) != null) {
-                    // key already exists
-                    throw x.syntaxError("Duplicate key \"" + key + "\"");
-                }
+//                if (this.opt(key) != null) {
+//                    // key already exists
+//                    throw x.syntaxError("Duplicate key \"" + key + "\"");
+//                }
                 // Only add value if non-null
                 Object value = x.nextValue();
                 if (value!=null) {
